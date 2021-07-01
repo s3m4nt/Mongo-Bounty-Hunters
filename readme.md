@@ -147,8 +147,10 @@ Update `Sara Lance`'s name to be her superhero alias 'White Canary'
 ## FAIL! It replaced the entire 'row' and replaced it with her new name only
 ** db.bounties.update({ name: "Sara Lance"}, {name: "White Canary"})
 ## Solution: 
+** db.bounties.update({name: "Sara Lance"},{$set: {name: "White Canary"}})
 
 Update Rocket's ship to be `The Milano 2`
+** db.bounties.update({name: "Rocket"},{$set: {ship: "The Milano 2"} })
 
 ### Intermediate Mongo
 
