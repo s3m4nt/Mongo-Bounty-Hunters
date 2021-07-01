@@ -127,7 +127,7 @@ db.bounties.insert([
 - Do a query to see all the bounties
 ** db.bounties.find()
 - Do a query to find the bounty whose client is `Time Bureau`
-** db.bounties.find({"Time Bureau"})
+** db.bounties.find({client: "Time Bureau"})
 - Do a query to find the bounties who have been `captured`
 ** db.bounties.find({captured: {$exists: true}})
 - Do a query specific to the bounty you inserted
