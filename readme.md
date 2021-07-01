@@ -125,7 +125,7 @@ db.bounties.insert([
 ## Read/Query
 
 - Do a query to see all the bounties
-## db.bounties.find()
+![Red text]db.bounties.find()
 - Do a query to find the bounty whose client is `Time Bureau`
 ## db.bounties.find({"Time Bureau"})
 - Do a query to find the bounties who have been `captured`
