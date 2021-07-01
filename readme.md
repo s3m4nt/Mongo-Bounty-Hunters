@@ -134,7 +134,7 @@ db.bounties.insert([
 - Do a query to just return the names of all the bounties
 ** db.bounties.distinct("name")
 
-## Remove
+## Remove or delete
 
 - Starbuck and the Captain have come to an understanding. Remove her record
 ** db.bounties.remove({name: "Starbuck"})
