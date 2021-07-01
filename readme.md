@@ -125,28 +125,28 @@ db.bounties.insert([
 ## Read/Query
 
 - Do a query to see all the bounties
-![Red text]db.bounties.find()
+** db.bounties.find()
 - Do a query to find the bounty whose client is `Time Bureau`
-## db.bounties.find({"Time Bureau"})
+** db.bounties.find({"Time Bureau"})
 - Do a query to find the bounties who have been `captured`
-## db.bounties.find({captured: {$exists: true}})
+** db.bounties.find({captured: {$exists: true}})
 - Do a query specific to the bounty you inserted
 - Do a query to just return the names of all the bounties
-## db.bounties.distinct("name")
+** db.bounties.distinct("name")
 
 ## Remove
 
 - Starbuck and the Captain have come to an understanding. Remove her record
-db.bounties.remove({name: "Starbuck"})
+** db.bounties.remove({name: "Starbuck"})
 - find and remove the duplicate record - be sure to JUST remove the one copy
-db.bounties.remove({_id:ObjectId("60dcfd6ddeb9b9c001ed2585")})
+** db.bounties.remove({_id:ObjectId("60dcfd6ddeb9b9c001ed2585")})
 
 ## Update
 
 Update `Sara Lance`'s name to be her superhero alias 'White Canary'
-### FAIL! It replace the entire 'row' and replaced it with her new name only
-db.bounties.update({ name: "Sara Lance"}, {name: "White Canary"})
-
+## FAIL! It replaced the entire 'row' and replaced it with her new name only
+** db.bounties.update({ name: "Sara Lance"}, {name: "White Canary"})
+## Solution: 
 
 Update Rocket's ship to be `The Milano 2`
 
